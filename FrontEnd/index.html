@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="css/style.css" />
+
+        <title>Orinoco</title>
+    </head>
+
+    <body>
+        <header class="container-fluid bg-orinoco">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="col-9">
+                        <a class="" href="index.html"><img src="img/logo.png" alt="Logo Orinoco" class="img-logo"></a>
+                    </div>
+
+                    <button class="col-3 navbar-toggler toggle-btn" type="button" data-toggle="collapse" data-target="#navbarContent" aria-label="menu déroulant">
+                        <span class="navbar-toggler-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div id="navbarContent" class="collapse navbar-collapse col-3">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Oritoys</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Oribook</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Oritextil</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="">...</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <h1>Que recherchez-vous ?</h1>
+            <form class="d-md-flex flex-md-row py-3">
+                <div class="px-3">
+                    <input type="checkbox" id="teddies" name="teddies" value="" checked />
+                    <label for="teddies">Peluches</label>
+                </div>
+
+                <div class="px-3">
+                    <input type="checkbox" id="boardGames" name="boardGames" value="" />
+                    <label for="boardGames">Jeux de société</label>
+                </div>
+
+                <div class="px-3">
+                    <input type="checkbox" id="educationalToys" name="educationalToys" value="" />
+                    <label for="educationalToys">Jeux éducatifs</label>
+                </div>
+
+                <div class="px-3">
+                    <input type="checkbox" id="outdoorToys" name="outdoorToys" value="" />
+                    <label for="outdoorToys">Jeux d'extérieur</label>
+                </div>
+
+                <div class="px-3">
+                    <input class="btn-primary btn-style" type="submit" value="Valider votre sélection"/>
+                </div>
+            </form>
+            
+            <div class="row py-3">
+                <section class="order-2 col-12 order-md-1 col-md-8" id="productList">
+                   <h2>Résultats</h2>
+
+                    <div id="display-teddies" class="row shadow display-teddies">
+                    </div>
+                </section>
+
+                <aside class="d-flex flex-md-column order-1 order-md-2 d-md-inline col-md-4">
+                    <a class="row text-decoration-none" href="basket.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-basket-fill col-12 col-lg-3 px-4" viewBox="0 0 16 16">
+                                <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z"/>
+                        </svg>
+
+                        <h2 class="col-9 d-none d-lg-inline">Mon panier</h2>
+                    </a>
+                    <p id="basket-length"></p>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="text-left text-sm-center bg-orinoco">
+            <ul class="list-inline-sm">
+                <li class="list-inline-item">
+                    <a class="nav-link" href="#">A propos</a>
+                </li>   
+
+                <li class="list-inline-item">
+                    <a class="nav-link" href="#">Conditions générales de vente</a>
+                </li>
+
+                <li class="list-inline-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+            </ul>
+        </footer>    
+
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+            <script src="js/APIlinking.js"></script>
+            <script src="js/index.js"></script>
+            <script src="js/basket.js"></script>
+            
+    </body>
+</html>    
+

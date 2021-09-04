@@ -1,0 +1,24 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "P5 WebDev path OCR Orinoco",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moumoucheuh/AngelaCanda_5_13072021.git"
+  },
+  "author": "Angela Canda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moumoucheuh/AngelaCanda_5_13072021/issues"
+  },
+  "homepage": "https://github.com/Moumoucheuh/AngelaCanda_5_13072021#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "bootstrap-icons": "^1.5.0"
+  },
+  "devDependencies": {}
+}

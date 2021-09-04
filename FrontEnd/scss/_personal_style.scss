@@ -1,0 +1,65 @@
+.bg-orinoco {
+  background-color: $bg-orinoco;
+}
+
+button,
+.btn-style {
+  border-radius: 5px;
+  color: $bg-orinoco;
+}
+
+.btn-link {
+  background-color: $orinoco-color-secondary;
+  text-decoration: none;
+}
+
+.img-logo {
+  width: 30%;
+  @include md {
+    width: 70%;
+  }
+}
+
+.toggle-btn {
+  background-color: $orinoco-color-primary;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.bi .bi-list {
+  color: $orinoco-color-secondary;
+}
+
+.basket-img {
+  width: 25%;
+  @include md {
+    width: 100%;
+  }
+}
+
+.rm-button {
+  color: $orinoco-color-primary;
+  background-color: transparent;
+  border: none;
+  width: 25%;
+  height: 25%;
+}
+
+.teddy-card:hover {
+  transform: scale(1.1);
+  transition: transform 500ms ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  color: $orinoco-color-primary;
+}
+
+.price {
+  font-weight: bold;
+}
